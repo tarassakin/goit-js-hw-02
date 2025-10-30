@@ -1,0 +1,60 @@
+// function getSubscriptionPrice(type) {
+//   switch (type) {
+//     case 'starter':
+//       return '0';
+//       break;
+
+//     case 'professional':
+//       return '20';
+//       break;
+
+//     case 'organization':
+//       return '50';
+//       break;
+
+//     case 'organization':
+//       return '50';
+//       break;
+
+//     default:
+//       return 'Invalid subscription type!';
+//   }
+// }
+
+function getShippingCost(country) {
+  switch (country) {
+    case 'Australia':
+      return `Shipping to ${'Australia'} will cost ${170} credits`;
+      break;
+
+    case 'Germany':
+      return `"Sorry, there is no delivery to your country"`;
+      break;
+
+    case 'China':
+      return `Shipping to ${'China'} will cost ${100} credits`;
+      break;
+
+    case 'Chile':
+      return `Shipping to ${'Chile'} will cost ${250}credits`;
+      break;
+
+    case 'Jamaica':
+      return `Shipping to ${'Jamaica'} will cost ${120} credits`;
+      break;
+
+    case 'Sweden':
+      return `"Sorry, there is no delivery to your country"`;
+      break;
+
+    default:
+      return 'Sorry, there is no delivery to your country';
+  }
+}
+
+console.log(getShippingCost('Australia')); // "Shipping to Australia will cost 170 credits"
+console.log(getShippingCost('Germany')); // "Sorry, there is no delivery to your country"
+console.log(getShippingCost('China')); // "Shipping to China will cost 100 credits"
+console.log(getShippingCost('Chile')); // "Shipping to Chile will cost 250 credits"
+console.log(getShippingCost('Jamaica')); // "Shipping to Jamaica will cost 120 credits"
+console.log(getShippingCost('Sweden')); // "Sorry, there is no delivery to your country"
