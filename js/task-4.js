@@ -1,34 +1,7 @@
-// function getSubscriptionPrice(type) {
-//   switch (type) {
-//     case 'starter':
-//       return '0';
-//       break;
-
-//     case 'professional':
-//       return '20';
-//       break;
-
-//     case 'organization':
-//       return '50';
-//       break;
-
-//     case 'organization':
-//       return '50';
-//       break;
-
-//     default:
-//       return 'Invalid subscription type!';
-//   }
-// }
-
 function getShippingCost(country) {
   switch (country) {
     case 'Australia':
       return `Shipping to ${'Australia'} will cost ${170} credits`;
-      break;
-
-    case 'Germany':
-      return `"Sorry, there is no delivery to your country"`;
       break;
 
     case 'China':
@@ -41,10 +14,6 @@ function getShippingCost(country) {
 
     case 'Jamaica':
       return `Shipping to ${'Jamaica'} will cost ${120} credits`;
-      break;
-
-    case 'Sweden':
-      return `"Sorry, there is no delivery to your country"`;
       break;
 
     default:
